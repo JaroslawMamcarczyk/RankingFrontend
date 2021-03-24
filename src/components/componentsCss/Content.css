@@ -1,0 +1,61 @@
+*{
+	width: 630px;
+	float: left;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.podstrona {
+	background: #F5F5F5 url('./gfx/podstrona_tytul.gif') no-repeat left top;
+	width: 958px;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: left;
+	}
+
+.podstrona h1 {
+	font: 20px 'Trebuchet MS', verdana, tahoma, geneva, sans-serif;
+	color: #898989;
+	padding: 35px 0 0 44px;
+	}
+	
+.tresc {
+	background: url('./gfx/podstrona_left.gif') no-repeat left bottom;
+	overflow: hidden;
+	}
+	
+.blok_lewy {
+	width: 459px;
+	padding: 46px 0 40px 0;
+	float: left;
+	text-align: center;
+	}
+	
+.blok_prawy {
+	background: url('./gfx/podstrona_right.gif') no-repeat right 46px;
+	width: 499px;
+	padding: 46px 0 40px 0;
+	float: left;
+	text-align: center;
+	}
+
+.podstrona p {
+	font: 13px 'Trebuchet MS', verdana, tahoma, geneva, sans-serif;
+	color: #424242;
+	width: 410px;
+	margin: 25px 0 0 44px;
+	line-height: 19px;
+	text-align: justify;
+	}
+
+.podstrona p span {
+	color: #000;
+	display: block;
+	text-indent: 40px;
+	}
+    .wiecej {
+        font: 13px 'Trebuchet MS', verdana, tahoma, geneva, sans-serif;
+        color: #003C79;
+        float: right;
+        margin: 20px 44px 20px 0;
+        }

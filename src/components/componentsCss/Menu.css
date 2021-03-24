@@ -1,0 +1,42 @@
+*{
+	width: 150px;
+	float: left;
+	overflow: hidden;
+	background-color: #ccc;
+}
+
+.menu {
+	background: url('./gfx/menu_tlo.jpg') no-repeat left top;
+	margin: 0 auto;
+	width: 958px;
+	height: 52px;
+	overflow: hidden;
+	border-left: 1px #fff solid;
+	border-right: 1px #fff solid;
+	position: relative; z-index: 1;
+	}
+	
+.menu ul {
+	list-style: none;
+	margin: 0 0 0 510px;
+	padding: 14px 0 0 0;
+	}
+	
+.menu ul li {
+	font: 15px 'Trebuchet MS', verdana, tahoma, geneva, sans-serif;
+	float: left;
+	margin: 0 25px 0 0;
+	}
+	
+.menu ul li a {
+	color: #fff;
+	overflow: hidden;
+	}
+	
+.menu ul li span {
+	display: block;
+	color: #037;
+	position: relative; bottom: 19px; left: 1px; z-index: -1;
+	text-decoration: underline;
+	}
+	
