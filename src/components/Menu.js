@@ -1,18 +1,43 @@
 import { Component } from "react";
 import {Link} from "react-router-dom";
-  
+import {BrowserRouter as Router, Switch,Route,} from "react-router-dom";
+import Test from './Test.js';
+import Content from './Content.js';
+const routes = [{
+    path: "/test",
+    main: () => <Test />
+  },
 
+{
+    path: "", 
+    exact: true,
+    main: () => <Content />
+  },
+   ];
 class Menu extends Component{
+   
     render(){
-        return <div className="sidebar">
+        return <Router>
+        <div className="sidebar">
         <h3>Menu</h3>
         <ul>
-            <li><Link to="/test">Strona Główna</Link></li>
+            <li><Link to="/">Strona Główna</Link></li>
             <li><Link to="/test">O nas</Link></li>
             <li><Link to="/test">Oferta</Link></li>
             <li><Link to="/test">Kontakt</Link></li>
         </ul>
     </div>
+    <Switch>
+            {routes.map((route, index) => (
+            <Route
+            key={index}
+            path={route.path}
+            exact={route.exact}
+            children={<route.main />}
+          />
+        ))}
+        </Switch>
+    </Router>
     }
 }
 export default Menu;

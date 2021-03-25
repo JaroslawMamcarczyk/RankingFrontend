@@ -4,7 +4,7 @@ import React, {Component} from "react";
 class Header extends Component{
 render(){
     return <div className="header"> 
-            <h1>Rannking filmowy</h1>
+            <h1>Ranking filmowy</h1>
                <h2>Porównaj swój gust ze znajomymi</h2>	
             </div>
 }
