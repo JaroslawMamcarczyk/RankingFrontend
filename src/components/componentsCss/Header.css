@@ -1,13 +1,21 @@
-.top {
-	width: 780px;
-	height: 25%;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	background: url('./gfx/film.jpg') ;
+.header {
+	color: #333;
+	background: url('./gfx/film.jpg') center center fixed;
+	background-size: auto;
+	margin:0 auto;
+	color: #fff;
+	border-bottom: 1px solid #eee;
 }
-
 h1 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-style: inherit;
+	font-size: 24px;
+	padding-top: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.header h2 {
+	font-size: 18px;
+	text-align: center;
+}
+.header h1, h2 {
+	margin-left: 50px;
 }

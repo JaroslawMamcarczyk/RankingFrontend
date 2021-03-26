@@ -1,42 +1,39 @@
-*{
-	width: 150px;
+.sidebar{
+	width: 10%;
+	height: 100%;
 	float: left;
-	overflow: hidden;
-	background-color: #ccc;
+	padding-right: 2px;
+	border-right-color: black;
+	border-right-style: solid;
 }
 
-.menu {
-	background: url('./gfx/menu_tlo.jpg') no-repeat left top;
-	margin: 0 auto;
-	width: 958px;
-	height: 52px;
-	overflow: hidden;
-	border-left: 1px #fff solid;
-	border-right: 1px #fff solid;
-	position: relative; z-index: 1;
-	}
-	
-.menu ul {
-	list-style: none;
-	margin: 0 0 0 510px;
-	padding: 14px 0 0 0;
-	}
-	
-.menu ul li {
-	font: 15px 'Trebuchet MS', verdana, tahoma, geneva, sans-serif;
-	float: left;
-	margin: 0 25px 0 0;
-	}
-	
-.menu ul li a {
-	color: #fff;
-	overflow: hidden;
-	}
-	
-.menu ul li span {
+.sidebar h3 {
+	border-bottom: 2px solid #eee;
+	font-size: 16px;
+	color: #eee;
+}
+.sidebar ul {
+	list-style-type: none;
+}
+
+.sidebar ul li {
+	font-size: 14px;
 	display: block;
-	color: #037;
-	position: relative; bottom: 19px; left: 1px; z-index: -1;
-	text-decoration: underline;
-	}
+	padding: 5px;
+	border-bottom: 1px solid #eee;
+	text-decoration: none;
+	color: #eee;
+}
+.sidebar ul li Link:hover {
+	font-weight: bold;
+	
+}
+.contentContener { 
+	opacity: 0.5;
+	width: 90%;
+	height: 100%;
+	background-color:#a1df95;
+	float: left;
+	
+}
 	

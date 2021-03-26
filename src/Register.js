@@ -1,8 +1,8 @@
 
 import './Register.css';
 import { Component } from 'react';
-//import Form from 'react-bootstrap/Form';
-//import Buttom from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Buttom from 'react-bootstrap/Button';
 
 
 
@@ -11,7 +11,6 @@ class Register extends Component{
   handleSubmitt = event =>{
     event.preventDefault();
     this.registerUser(event.target.username.value, event.target.password.value);
-
  }
   registerUser(username,password){
     fetch('http://localhost:8080/users',{

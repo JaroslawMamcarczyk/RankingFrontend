@@ -15,9 +15,15 @@ class App extends Component{
 
     render (){
    return <div className = "wrapper">
+   <div className= "headerContener">
   <Header />
-  <Menu />
+  </div>
+  <div className = "menuContener">
+<Menu />
+  </div>
+  <div className = "footerContener">
   <Footer />
+  </div>
   </div>
 }
  }

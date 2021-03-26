@@ -1,5 +1,5 @@
 import { Component } from "react";
-//import './componentsCss/Footer.css';
+import './componentsCss/Footer.css';
 
 class Footer extends Component{
     render(){
@@ -9,7 +9,8 @@ class Footer extends Component{
 			 <li><a href="#">O nas</a></li>
 			 <li><a href="#">Oferta</a></li>
 			 <li><a href="#">Kontakt</a></li>
-		 </ul>		 <div id="copyright">
+		 </ul>		 
+		 <div id="copyright">
 	 &copy; Wszelkie prawa zastrzeżone. <br/> 
 	 <p>Projekt: darisuzwod@wp.pl</p>			    
   </div>

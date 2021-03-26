@@ -1,53 +1,24 @@
-*{
-	clear: both;
-	width: 100%;
-	background-color: #888;
+
+.footer { 
+	color: rgb(233, 21, 21);
+	margin: 0;
+	text-align: end;
 }
 
-.stopka_marginesy {
-	background: url('./gfx/stopka_right.gif') repeat-x left top;
-	height: 71px;
-	width: 100%;
-	text-align: left; 
-	position: absolute; left: 0px; right: 0px; z-index: -1;
-	}
-	
-.stopka_marginesy div {
-	background: url('./gfx/stopka_left.gif') repeat-x left top;
-	height: 71px;
-	width: 50%;
-	text-align: left;
-	position: absolute; left: 0px; right: 0px;
-	}
+.footer ul {
+	list-style-type: none
+}
+.footer ul li {
+	display: inline;
+	padding-right: 10px;
+}
+.footer a, .copyright a {
+	text-decoration: none;
+	color: #f5f6f8;
+}
 
-.stopka {
-	background: url('./gfx/stopka_tlo.jpg') no-repeat left top;
-	font: 12px 'Trebuchet MS', verdana, tahoma, geneva, sans-serif;
-	color: #fff;
-	width: 958px;
-	height: 71px;
-	border-left: 1px #fff solid;
-	border-right: 1px #fff solid;
-	text-align: right;
-	margin: 0 auto;
-	}
-
-.stopka a {
-	color: #fff;
-	}
-
-.stopka p {
-	padding: 30px 30px 0 0;
-	line-height: 13px;
-	}
-
-.stopka ul {
-	list-style: none;
-	float: left;
-	padding: 30px 0 0 0;
-	}
-
-.stopka ul li {
-	float: left;
-	margin: 0 0 0 20px;
-	}
+.copyright {
+	padding-right: 10px;
+	font-size: 11px;
+	color: #f3f0ef;
+}

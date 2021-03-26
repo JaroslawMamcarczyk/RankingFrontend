@@ -1,17 +1,20 @@
 import { Component } from "react";
 import {Link} from "react-router-dom";
 import {BrowserRouter as Router, Switch,Route,} from "react-router-dom";
+import './componentsCss/Menu.css'
 import Test from './Test.js';
 import Content from './Content.js';
 const routes = [{
     path: "/test",
-    main: () => <Test />
+    main: () => <div />
   },
 
 {
     path: "", 
     exact: true,
-    main: () => <Content />
+    main: () => <div className ="contentContener">
+    <Content />
+    </div>
   },
    ];
 class Menu extends Component{
