@@ -2,15 +2,28 @@ import { Component } from "react";
 import {Link} from "react-router-dom";
 import {BrowserRouter as Router, Switch,Route,} from "react-router-dom";
 import './componentsCss/Menu.css'
-import Test from './Test.js';
 import Content from './Content.js';
+import Movies from './Movies.js';
+import Ranking from './Ranking.js';
 const routes = [{
     path: "/test",
     main: () => <div />
   },
-
 {
-    path: "", 
+path: "/movies",
+main: () => <div className = "contentContener">
+  <Movies />
+</div>
+},
+{
+  path: "/ranking", 
+  exact: true,
+  main: () => <div className ="contentContener">
+  <Ranking  />
+  </div>
+},
+{
+    path: "/", 
     exact: true,
     main: () => <div className ="contentContener">
     <Content />
@@ -25,8 +38,8 @@ class Menu extends Component{
         <h3>Menu</h3>
         <ul>
             <li><Link to="/">Strona Główna</Link></li>
-            <li><Link to="/test">O nas</Link></li>
-            <li><Link to="/test">Oferta</Link></li>
+            <li><Link to="/movies">Filmy </Link></li>
+            <li><Link to="/ranking">Rankingi</Link></li>
             <li><Link to="/test">Kontakt</Link></li>
         </ul>
     </div>

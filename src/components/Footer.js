@@ -3,17 +3,8 @@ import './componentsCss/Footer.css';
 
 class Footer extends Component{
     render(){
-        return <div className="footer">	       
-		<ul>
-			 <li><a href="#">Strona Główna</a></li>
-			 <li><a href="#">O nas</a></li>
-			 <li><a href="#">Oferta</a></li>
-			 <li><a href="#">Kontakt</a></li>
-		 </ul>		 
-		 <div id="copyright">
-	 &copy; Wszelkie prawa zastrzeżone. <br/> 
-	 <p>Projekt: darisuzwod@wp.pl</p>			    
-  </div>
+        return <div className="footer">	 
+		 <span className="lewa">Projekt i wykonanie: Mamcarczyk Jarosław email:darisuzwod@wp.pl</span><span className="prawa"> &copy; Wszelkie prawa zastrzeżone. </span>	    
   </div>
     }
 }
